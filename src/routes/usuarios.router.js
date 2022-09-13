@@ -5,9 +5,9 @@ const router = require("express").Router()
 const usuarioControllers = require('../controllers/usuario.controllers')
 //const usuarioController = require('../controllers/usuario.controllers')
 
-router.get('/', usuarioControllers.pacientes)
-router.get('/', usuarioControllers.atenciones)
-router.post('/', usuarioControllers.profesionales)
+router.get('/', usuarioControllers.listar)
+router.post('/', usuarioControllers.agregar)
+router.get('/:idusuario', usuarioControllers.listar_info)
 
 
 module.exports = router

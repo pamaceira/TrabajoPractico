@@ -2,10 +2,10 @@ module.exports = {
     listar: async (req, res) => {
     
     try {
-      console.log('Prueba usuarios listar!')
+      console.log('Prueba listar profesionales!')
 
       res.json({
-          mensaje: 'Se ejecutó el usuarios listar!!!'
+          mensaje: 'Se ejecutó el listar profesionales!!!'
       })
   } 
   catch (error) {
@@ -16,9 +16,9 @@ module.exports = {
 
     agregar: async (req, res) => {
       try{
-        console.log("Ejecutando agregar usuario!!!")
+        console.log("Ejecutando agregar profesionales!!!")
           res.json({
-            menssage: "Alta usuarios!!!."
+            menssage: "El profesional se agrego con exito!!."
          })
 
     
@@ -30,15 +30,15 @@ module.exports = {
     listar_info: async (req, res) => {
 
       try {
-        console.log('Prueba usuarios/Listar Info! idUsuario: ' + req.params.idUsuario)
+        console.log('Prueba Profesional/Listar Info! idProfesional: ' + req.params.idProfesional)
 
         res.json({
-            mensaje: 'Se ejecutó el GET usuarios/Listar Info!!! idUsuario: ' + req.params.idUsuario
+            mensaje: 'Se ejecutó el Listar Info!!! idProfesional: ' + req.params.idProfesional
         })
     } 
     catch (error) {
         console.log('Error: ' + error)    
     }  
     }
-    
+
  }
