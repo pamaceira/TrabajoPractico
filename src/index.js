@@ -1,6 +1,6 @@
 const express = require('express')
 
-const globalConstants = require('./conts/globalConstants')
+const globalConstants = require('./const/global.contants')
 const routerConfig = require('./routes/index.routes')
 
 const configuracionApi = (app) => {
@@ -11,7 +11,7 @@ const configuracionApi = (app) => {
 }
 
 const configuracionRouter = (app) => {
-    app.use('/api/', routerConfig.rutas_init())
+    app.use('/api/', routerConfig.rutas_init)
 
 
 }
